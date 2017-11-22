@@ -4,19 +4,20 @@
 # This file is distributed under the same license as the Godot source code.
 #
 # ekeimaja <ekeimaja@gmail.com>, 2017.
+# Jarmo Riikonen <amatrelan@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor\n"
-"PO-Revision-Date: 2017-08-25 14:41+0000\n"
-"Last-Translator: ekeimaja <ekeimaja@gmail.com>\n"
+"PO-Revision-Date: 2017-10-31 22:45+0000\n"
+"Last-Translator: Jarmo Riikonen <amatrelan@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot/fi/>\n"
 "Language: fi\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.17-dev\n"
+"X-Generator: Weblate 2.17\n"
 
 #: editor/animation_editor.cpp
 msgid "Disabled"
@@ -1800,7 +1801,7 @@ msgstr ""
 
 #: editor/editor_node.cpp
 msgid "Scene"
-msgstr "Scene"
+msgstr "Näkymä"
 
 #: editor/editor_node.cpp
 msgid "Go to previously opened scene."
