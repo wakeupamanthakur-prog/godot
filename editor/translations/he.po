@@ -3,13 +3,14 @@
 # Copyright (C) 2014-2017 Godot Engine contributors (cf. AUTHORS.md)
 # This file is distributed under the same license as the Godot source code.
 #
+# Ben Golan <golanben4@gmail.com>, 2017.
 # Luc Stepniewski <lior@gradstein.info>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor\n"
-"PO-Revision-Date: 2017-11-24 09:47+0000\n"
-"Last-Translator: Luc Stepniewski <lior@gradstein.info>\n"
+"PO-Revision-Date: 2017-12-10 12:47+0000\n"
+"Last-Translator: Ben Golan <golanben4@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
 "godot/he/>\n"
 "Language: he\n"
@@ -24,7 +25,7 @@ msgstr "מושבת"
 
 #: editor/animation_editor.cpp
 msgid "All Selection"
-msgstr ""
+msgstr "כל האלמנטים שנבחרו"
 
 #: editor/animation_editor.cpp
 msgid "Move Add Key"
