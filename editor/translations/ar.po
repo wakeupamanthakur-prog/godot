@@ -8,6 +8,7 @@
 # Jamal Alyafei <jamal.qassim@gmail.com>, 2017.
 # john lennon <khoanantonio@outlook.com>, 2017.
 # Mohammmad Khashashneh <mohammad.rasmi@gmail.com>, 2016.
+# Mr ChaosXD <mrchaosxd3@gmail.com>, 2018.
 # Mrwan Ashraf <mrwan.ashraf94@gmail.com>, 2017.
 # noureldin sharaf <sharaf.noureldin@yahoo.com>, 2017.
 # omar anwar aglan <omar.aglan91@yahoo.com>, 2017-2018.
@@ -18,7 +19,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor\n"
-"PO-Revision-Date: 2018-01-06 13:19+0000\n"
+"PO-Revision-Date: 2018-01-20 08:53+0000\n"
 "Last-Translator: omar anwar aglan <omar.aglan91@yahoo.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot/ar/>\n"
@@ -560,14 +561,13 @@ msgid "Signals"
 msgstr "الإشارات"
 
 #: editor/create_dialog.cpp
-#, fuzzy
 msgid "Change %s Type"
-msgstr "غير النوع الإفتراضي"
+msgstr "غير نوع %s"
 
 #: editor/create_dialog.cpp editor/project_settings_editor.cpp
 #: modules/visual_script/visual_script_editor.cpp
 msgid "Change"
-msgstr ""
+msgstr "تغير"
 
 #: editor/create_dialog.cpp
 msgid "Create New %s"
@@ -681,9 +681,8 @@ msgstr ""
 "إمسح علي أية حال؟ (لا رجعة)"
 
 #: editor/dependency_editor.cpp
-#, fuzzy
 msgid "Cannot remove:"
-msgstr "لا يمكن المسح:\n"
+msgstr "لا يمكن المسح:"
 
 #: editor/dependency_editor.cpp
 msgid "Error loading:"
@@ -766,9 +765,8 @@ msgid "Lead Developer"
 msgstr "قائد المطوريين"
 
 #: editor/editor_about.cpp
-#, fuzzy
 msgid "Project Manager "
-msgstr "مدير المشروع"
+msgstr "مدير المشروع "
 
 #: editor/editor_about.cpp
 msgid "Developers"
@@ -943,7 +941,7 @@ msgstr "إمسح التأثير"
 
 #: editor/editor_audio_buses.cpp
 msgid "Audio"
-msgstr ""
+msgstr "صوت"
 
 #: editor/editor_audio_buses.cpp
 msgid "Add Audio Bus"
@@ -1119,11 +1117,11 @@ msgstr "يُحدث المشهد..."
 
 #: editor/editor_data.cpp
 msgid "[empty]"
-msgstr ""
+msgstr "[فارغ]"
 
 #: editor/editor_data.cpp
 msgid "[unsaved]"
-msgstr ""
+msgstr "[غير محفوظ]"
 
 #: editor/editor_dir_dialog.cpp
 msgid "Please select a base directory first"
@@ -1163,9 +1161,8 @@ msgid "Packing"
 msgstr "يَحزم\"ينتج الملف المضغوط\""
 
 #: editor/editor_export.cpp platform/javascript/export/export.cpp
-#, fuzzy
 msgid "Template file not found:"
-msgstr "ملف النموذج غير موجود:\n"
+msgstr "ملف النموذج غير موجود:"
 
 #: editor/editor_file_dialog.cpp scene/gui/file_dialog.cpp
 msgid "File Exists, Overwrite?"
@@ -1423,9 +1420,8 @@ msgid "Clear"
 msgstr "خالي"
 
 #: editor/editor_log.cpp
-#, fuzzy
 msgid "Clear Output"
-msgstr "الخرج"
+msgstr "أخلاء الخرج"
 
 #: editor/editor_node.cpp editor/plugins/animation_player_editor_plugin.cpp
 msgid "Error saving resource!"
@@ -1489,7 +1485,6 @@ msgid "This operation can't be done without a tree root."
 msgstr "هذه العملية لا يمكنها الإكتمال من غير جزر الشجرة."
 
 #: editor/editor_node.cpp
-#, fuzzy
 msgid ""
 "Couldn't save scene. Likely dependencies (instances or inheritance) couldn't "
 "be satisfied."
@@ -2475,9 +2470,8 @@ msgid "No version.txt found inside templates."
 msgstr "لا ملف version.txt تم إيجاده داخل القالب."
 
 #: editor/export_template_manager.cpp
-#, fuzzy
 msgid "Error creating path for templates:"
-msgstr "خطأ في إنشاء المسار للقوالب:\n"
+msgstr "خطأ في إنشاء المسار للقوالب:"
 
 #: editor/export_template_manager.cpp
 msgid "Extracting Export Templates"
@@ -2633,35 +2627,28 @@ msgid "View items as a list"
 msgstr "أظهر العناصر كقائمة"
 
 #: editor/filesystem_dock.cpp
-#, fuzzy
 msgid "Status: Import of file failed. Please fix file and reimport manually."
-msgstr ""
-"\n"
-"الحالة: إستيراد الملف فشل. من فضلك أصلح الملف و أعد إستيراده يدوياً."
+msgstr "الحالة: إستيراد الملف فشل. من فضلك أصلح الملف و أعد إستيراده يدوياً."
 
 #: editor/filesystem_dock.cpp
 msgid "Cannot move/rename resources root."
 msgstr "لا يمكن مسح/إعادة تسمية جذر الموارد."
 
 #: editor/filesystem_dock.cpp
-#, fuzzy
 msgid "Cannot move a folder into itself."
-msgstr "لا يمكن تحريك مجلد إلي نفسه.\n"
+msgstr "لا يمكن تحريك مجلد إلي نفسه."
 
 #: editor/filesystem_dock.cpp
-#, fuzzy
 msgid "Error moving:"
-msgstr "خطأ في تحريك:\n"
+msgstr "خطأ في تحريك:"
 
 #: editor/filesystem_dock.cpp
-#, fuzzy
 msgid "Error duplicating:"
-msgstr "خطآ في التكرار\n"
+msgstr "خطآ في التكرار:"
 
 #: editor/filesystem_dock.cpp
-#, fuzzy
 msgid "Unable to update dependencies:"
-msgstr "غير قادر علي تحديث التبعيات:\n"
+msgstr "غير قادر علي تحديث التبعيات:"
 
 #: editor/filesystem_dock.cpp
 msgid "No name provided"
@@ -2831,11 +2818,11 @@ msgstr "حاري إستيراد المشهد.."
 
 #: editor/import/resource_importer_scene.cpp
 msgid "Generating Lightmaps"
-msgstr ""
+msgstr "انشاء خارطة الضوء"
 
 #: editor/import/resource_importer_scene.cpp
 msgid "Generating for Mesh: "
-msgstr ""
+msgstr "انشاء من اجل الميش: "
 
 #: editor/import/resource_importer_scene.cpp
 msgid "Running Custom Script.."
@@ -3083,11 +3070,11 @@ msgstr "نسخ الحركة"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Onion Skinning"
-msgstr ""
+msgstr "تقشير البصل"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Enable Onion Skinning"
-msgstr ""
+msgstr "تفعيل تقشير البصل"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Directions"
@@ -3111,11 +3098,11 @@ msgstr "الخطوة 1"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "2 steps"
-msgstr ""
+msgstr "خطوتان"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "3 steps"
-msgstr ""
+msgstr "ثلاثة خطوات"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Differences Only"
@@ -3123,7 +3110,7 @@ msgstr "الإختلافات فقط"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Force White Modulate"
-msgstr ""
+msgstr "الاجبار على التعديل الابيض"
 
 #: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Include Gizmos (3D)"
@@ -3304,9 +3291,8 @@ msgid "Filters.."
 msgstr "الفلترة.."
 
 #: editor/plugins/animation_tree_editor_plugin.cpp
-#, fuzzy
 msgid "AnimationTree"
-msgstr "حركة"
+msgstr "شجرة الحركة"
 
 #: editor/plugins/asset_library_editor_plugin.cpp
 msgid "Free"
@@ -3457,20 +3443,25 @@ msgid ""
 "Save your scene (for images to be saved in the same dir), or pick a save "
 "path from the BakedLightmap properties."
 msgstr ""
+"لا يمكن تحديد مسار حفظ لصور خرائط الضوء.\n"
+"احفظ مشهدك (لكي تحفظ الصور في المسار ذاته), او اختر مسار حفظ لخصائص خرائط "
+"الضوء المعدة مسبقا."
 
 #: editor/plugins/baked_lightmap_editor_plugin.cpp
 msgid ""
 "No meshes to bake. Make sure they contain an UV2 channel and that the 'Bake "
 "Light' flag is on."
 msgstr ""
+"لايوجد ميش لكي يتم تجهيزة. تاكد من انه يحتوي على منفذ UV2 و ان زر الضوء "
+"'المعد' مفعل."
 
 #: editor/plugins/baked_lightmap_editor_plugin.cpp
 msgid "Failed creating lightmap images, make sure path is writable."
-msgstr ""
+msgstr "لا يمكن انشاء خرائط الضوء, تاكد من ان المسار صحيح."
 
 #: editor/plugins/baked_lightmap_editor_plugin.cpp
 msgid "Bake Lightmaps"
-msgstr ""
+msgstr "اعداد خرائط الضوء"
 
 #: editor/plugins/camera_editor_plugin.cpp
 #: editor/plugins/spatial_editor_plugin.cpp
@@ -4163,9 +4154,8 @@ msgid "Bake!"
 msgstr "طبخ!"
 
 #: editor/plugins/navigation_mesh_editor_plugin.cpp
-#, fuzzy
 msgid "Bake the navigation mesh."
-msgstr "طبخ ميش المحاور.\n"
+msgstr "طبخ ميش المحاور."
 
 #: editor/plugins/navigation_mesh_editor_plugin.cpp
 msgid "Clear the navigation mesh."
@@ -4554,9 +4544,8 @@ msgid "Paste"
 msgstr ""
 
 #: editor/plugins/resource_preloader_editor_plugin.cpp
-#, fuzzy
 msgid "ResourcePreloader"
-msgstr "مورد"
+msgstr "محدث مسبق للموارد"
 
 #: editor/plugins/script_editor_plugin.cpp
 msgid "Clear Recent Files"
@@ -4639,7 +4628,6 @@ msgid "Copy Script Path"
 msgstr "نسخ مسار الكود"
 
 #: editor/plugins/script_editor_plugin.cpp
-#, fuzzy
 msgid "Show In File System"
 msgstr "أظهر في مدير الملفات"
 
@@ -5243,9 +5231,8 @@ msgid "XForm Dialog"
 msgstr ""
 
 #: editor/plugins/spatial_editor_plugin.cpp
-#, fuzzy
 msgid "Select Mode (Q)"
-msgstr "تحديد الوضع"
+msgstr "تحديد الوضع (ض)"
 
 #: editor/plugins/spatial_editor_plugin.cpp
 msgid ""
@@ -5825,9 +5812,8 @@ msgid ""
 msgstr ""
 
 #: editor/plugins/tile_set_editor_plugin.cpp
-#, fuzzy
 msgid "Select current edited sub-tile."
-msgstr "حفظ المورد الذي يتم تعديله حاليا."
+msgstr "حفظ العنوان الفرعي الذي يتم تعديله حاليا."
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Select sub-tile to change it's priority."
@@ -5958,7 +5944,6 @@ msgid "Imported Project"
 msgstr ""
 
 #: editor/project_manager.cpp
-#, fuzzy
 msgid "Couldn't create folder."
 msgstr "لا يمكن إنشاء المجلد."
 
@@ -6007,27 +5992,24 @@ msgid "Import Existing Project"
 msgstr ""
 
 #: editor/project_manager.cpp
-#, fuzzy
 msgid "Import & Edit"
-msgstr "إستيراد"
+msgstr "إستيراد و تعديل"
 
 #: editor/project_manager.cpp
 msgid "Create New Project"
 msgstr ""
 
 #: editor/project_manager.cpp
-#, fuzzy
 msgid "Create & Edit"
-msgstr "إنشاء عقدة"
+msgstr "إنشاء و تعديل"
 
 #: editor/project_manager.cpp
 msgid "Install Project:"
 msgstr ""
 
 #: editor/project_manager.cpp
-#, fuzzy
 msgid "Install & Edit"
-msgstr "تثبيت"
+msgstr "تثبيت و تعديل"
 
 #: editor/project_manager.cpp
 msgid "Project Name:"
@@ -6686,9 +6668,8 @@ msgid "Error duplicating scene to save it."
 msgstr ""
 
 #: editor/scene_tree_dock.cpp
-#, fuzzy
 msgid "Sub-Resources"
-msgstr "مورد"
+msgstr "مورد فرعي"
 
 #: editor/scene_tree_dock.cpp
 msgid "Clear Inheritance"
@@ -6987,9 +6968,8 @@ msgid "Child Process Connected"
 msgstr ""
 
 #: editor/script_editor_debugger.cpp
-#, fuzzy
 msgid "Copy Error"
-msgstr "خطأ تحميل"
+msgstr "خطأ في نسخ"
 
 #: editor/script_editor_debugger.cpp
 msgid "Inspect Previous Instance"
@@ -7343,51 +7323,44 @@ msgid "Pick Distance:"
 msgstr ""
 
 #: modules/mono/editor/godotsharp_editor.cpp
-#, fuzzy
 msgid "Generating solution..."
-msgstr "إنشاء المحيط..."
+msgstr "إنشاء الحل..."
 
 #: modules/mono/editor/godotsharp_editor.cpp
 msgid "Generating C# project..."
 msgstr ""
 
 #: modules/mono/editor/godotsharp_editor.cpp
-#, fuzzy
 msgid "Failed to create solution."
-msgstr "لا يمكن إنشاء الحد!"
+msgstr "لا يمكن إنشاء الحد."
 
 #: modules/mono/editor/godotsharp_editor.cpp
-#, fuzzy
 msgid "Failed to save solution."
-msgstr "فشل تحميل المورد."
+msgstr "فشل حفظ الحل."
 
 #: modules/mono/editor/godotsharp_editor.cpp
-#, fuzzy
 msgid "Done"
-msgstr "تم!"
+msgstr "تم"
 
 #: modules/mono/editor/godotsharp_editor.cpp
-#, fuzzy
 msgid "Failed to create C# project."
-msgstr "فشل تحميل المورد."
+msgstr "فشل إنشاء مشروع C#."
 
 #: modules/mono/editor/godotsharp_editor.cpp
 msgid "Mono"
 msgstr ""
 
 #: modules/mono/editor/godotsharp_editor.cpp
-#, fuzzy
 msgid "Create C# solution"
-msgstr "أنشئ الحد"
+msgstr "إنشاء حل C#"
 
 #: modules/mono/editor/mono_bottom_panel.cpp
 msgid "Builds"
 msgstr ""
 
 #: modules/mono/editor/mono_bottom_panel.cpp
-#, fuzzy
 msgid "Build Project"
-msgstr "مشروع"
+msgstr "بناء المشروع"
 
 #: modules/mono/editor/mono_bottom_panel.cpp
 msgid "Warnings"
@@ -7738,29 +7711,24 @@ msgid "Run exported HTML in the system's default browser."
 msgstr "شغل ملف HTML المُصدر في المتصفح الإفتراضي للنظام."
 
 #: platform/javascript/export/export.cpp
-#, fuzzy
 msgid "Could not write file:"
-msgstr "لا يمكن كتابة الملف:\n"
+msgstr "لا يمكن كتابة الملف:"
 
 #: platform/javascript/export/export.cpp
-#, fuzzy
 msgid "Could not open template for export:"
-msgstr "لا يمكن فتح القالب من أجل التصدير.\n"
+msgstr "لا يمكن فتح القالب من أجل التصدير:"
 
 #: platform/javascript/export/export.cpp
-#, fuzzy
 msgid "Invalid export template:"
-msgstr "إدارة قوالب التصدير"
+msgstr "إدارة قوالب التصدير:"
 
 #: platform/javascript/export/export.cpp
-#, fuzzy
 msgid "Could not read custom HTML shell:"
-msgstr "لا يمكن قراءة ملف HTML مخصص:\n"
+msgstr "لا يمكن قراءة ملف HTML مخصص:"
 
 #: platform/javascript/export/export.cpp
-#, fuzzy
 msgid "Could not read boot splash image file:"
-msgstr "لا يمكن كتابة الملف:\n"
+msgstr "لا يمكن قراءة ملف الإقلاع الصوري:"
 
 #: platform/javascript/export/export.cpp
 msgid "Using default boot splash image."
