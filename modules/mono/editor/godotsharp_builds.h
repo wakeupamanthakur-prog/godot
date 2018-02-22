@@ -93,7 +93,9 @@ public:
 
 	static bool make_api_sln(APIType p_api_type);
 
-	static bool build_project_blocking();
+	static bool build_project_blocking(const String &p_config);
+
+	static bool editor_build_callback();
 
 	GodotSharpBuilds();
 	~GodotSharpBuilds();
