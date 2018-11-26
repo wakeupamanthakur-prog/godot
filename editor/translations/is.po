@@ -2,22 +2,20 @@
 # Copyright (c) 2007-2018 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2018 Godot Engine contributors (cf. AUTHORS.md)
 # This file is distributed under the same license as the Godot source code.
-#
-# Jóhannes G. Þorsteinsson <johannesg@johannesg.com>, 2017.
+# Jóhannes G. Þorsteinsson <johannesg@johannesg.com>, 2017, 2018.
 # Kaan Gül <qaantum@hotmail.com>, 2018.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor\n"
-"PO-Revision-Date: 2018-06-05 05:39+0000\n"
-"Last-Translator: Kaan Gül <qaantum@hotmail.com>\n"
+"PO-Revision-Date: 2018-10-15 19:30+0000\n"
+"Last-Translator: Jóhannes G. Þorsteinsson <johannesg@johannesg.com>\n"
 "Language-Team: Icelandic <https://hosted.weblate.org/projects/godot-engine/"
 "godot/is/>\n"
 "Language: is\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.2.1\n"
 
 #: core/math/expression.cpp modules/gdscript/gdscript_functions.cpp
 #: modules/visual_script/visual_script_builtin_funcs.cpp
@@ -85,14 +83,12 @@ msgid "Delete Selected Key(s)"
 msgstr ""
 
 #: editor/animation_bezier_editor.cpp editor/animation_track_editor.cpp
-#, fuzzy
 msgid "Anim Duplicate Keys"
-msgstr "Tvíteknir lyklar"
+msgstr "Anim Tvíteknir lyklar"
 
 #: editor/animation_bezier_editor.cpp editor/animation_track_editor.cpp
-#, fuzzy
 msgid "Anim Delete Keys"
-msgstr "Anim DELETE-lyklar"
+msgstr "Anim Eyða Lyklum"
 
 #: editor/animation_track_editor.cpp
 #, fuzzy
@@ -373,7 +369,7 @@ msgstr ""
 #: editor/project_manager.cpp editor/project_settings_editor.cpp
 #: editor/property_editor.cpp modules/visual_script/visual_script_editor.cpp
 msgid "Edit"
-msgstr ""
+msgstr "Breyta"
 
 #: editor/animation_track_editor.cpp
 msgid "Animation properties."
@@ -664,9 +660,8 @@ msgid "Connect Signal: "
 msgstr ""
 
 #: editor/connections_dialog.cpp
-#, fuzzy
 msgid "Edit Connection: "
-msgstr "Breyta valferil"
+msgstr "Breyta Tengingu: "
 
 #: editor/connections_dialog.cpp
 msgid "Are you sure you want to remove all connections from the \""
@@ -686,7 +681,7 @@ msgstr ""
 
 #: editor/connections_dialog.cpp
 msgid "Edit..."
-msgstr ""
+msgstr "Breyta..."
 
 #: editor/connections_dialog.cpp
 msgid "Go To Method"
@@ -901,7 +896,7 @@ msgstr ""
 
 #: editor/editor_about.cpp
 msgid "Project Manager "
-msgstr ""
+msgstr "Verkefna Stjóri "
 
 #: editor/editor_about.cpp
 msgid "Developers"
@@ -1834,7 +1829,7 @@ msgstr ""
 
 #: editor/editor_node.cpp
 msgid "Open Project Manager?"
-msgstr ""
+msgstr "Opna Verkefna Stjóra?"
 
 #: editor/editor_node.cpp
 msgid "Save & Quit"
@@ -1847,6 +1842,7 @@ msgstr ""
 #: editor/editor_node.cpp
 msgid "Save changes the following scene(s) before opening Project Manager?"
 msgstr ""
+"Vista breytingar á neðangreindum senu(m) áður en Verkefna Stjóri er opnaður?"
 
 #: editor/editor_node.cpp
 msgid ""
@@ -2362,7 +2358,7 @@ msgstr ""
 
 #: editor/editor_plugin_settings.cpp
 msgid "Edit Plugin"
-msgstr ""
+msgstr "Breyta Viðbót"
 
 #: editor/editor_plugin_settings.cpp
 msgid "Installed Plugins:"
@@ -2387,7 +2383,7 @@ msgstr ""
 
 #: editor/editor_plugin_settings.cpp
 msgid "Edit:"
-msgstr ""
+msgstr "Breyta:"
 
 #: editor/editor_profiler.cpp editor/plugins/animation_state_machine_editor.cpp
 #: editor/rename_dialog.cpp
@@ -2865,7 +2861,7 @@ msgstr ""
 
 #: editor/filesystem_dock.cpp
 msgid "Edit Dependencies..."
-msgstr ""
+msgstr "Breyta"
 
 #: editor/filesystem_dock.cpp
 msgid "View Owners..."
@@ -6729,6 +6725,8 @@ msgid ""
 "Language changed.\n"
 "The UI will update next time the editor or project manager starts."
 msgstr ""
+"Tungumáli breytt.\n"
+"Viðmótið mun uppfærast við næstu ræsingu á tóli eða verkefna stjóra."
 
 #: editor/project_manager.cpp
 msgid ""
@@ -6738,7 +6736,7 @@ msgstr ""
 
 #: editor/project_manager.cpp
 msgid "Project Manager"
-msgstr ""
+msgstr "Verkefna Stjóri"
 
 #: editor/project_manager.cpp
 msgid "Project List"
