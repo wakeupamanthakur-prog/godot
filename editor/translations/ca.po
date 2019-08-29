@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-07-19 13:41+0000\n"
+"PO-Revision-Date: 2019-08-04 14:23+0000\n"
 "Last-Translator: roger <616steam@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/godot-engine/"
 "godot/ca/>\n"
@@ -1531,8 +1531,11 @@ msgid "Template file not found:"
 msgstr "No s'ha trobat la Plantilla:"
 
 #: editor/editor_export.cpp
+#, fuzzy
 msgid "On 32-bit exports the embedded PCK cannot be bigger than 4 GiB."
 msgstr ""
+"En les exportacions de 32 bits, el PCK incrustat no pot ser més gran que 4 "
+"GiB."
 
 #: editor/editor_feature_profile.cpp
 msgid "3D Editor"
@@ -1786,14 +1789,12 @@ msgid "Move Favorite Down"
 msgstr "Mou Favorit Avall"
 
 #: editor/editor_file_dialog.cpp
-#, fuzzy
 msgid "Go to previous folder."
-msgstr "Anar al directori pare."
+msgstr "Anar al directori anterior."
 
 #: editor/editor_file_dialog.cpp
-#, fuzzy
 msgid "Go to next folder."
-msgstr "Anar al directori pare."
+msgstr "Anar al directori següent."
 
 #: editor/editor_file_dialog.cpp scene/gui/file_dialog.cpp
 msgid "Go to parent folder."
@@ -1802,14 +1803,13 @@ msgstr "Anar al directori pare."
 #: editor/editor_file_dialog.cpp scene/gui/file_dialog.cpp
 #, fuzzy
 msgid "Refresh files."
-msgstr "Cerca Fitxers"
+msgstr "Actualitzar Fitxers"
 
 #: editor/editor_file_dialog.cpp
 msgid "(Un)favorite current folder."
 msgstr "Eliminar carpeta actual de preferits."
 
 #: editor/editor_file_dialog.cpp scene/gui/file_dialog.cpp
-#, fuzzy
 msgid "Toggle the visibility of hidden files."
 msgstr "Commutar visibilitat dels fitxers ocults."
 
@@ -2224,8 +2224,9 @@ msgid ""
 "Please read the documentation relevant to debugging to better understand "
 "this workflow."
 msgstr ""
-"En ser un object remot, els canvis no es desaran.\n"
-"Referiu-vos a la documentació rellevant sobre la Depuració de codi."
+"Aquest és un objecte remot, de manera que els canvis no es conservaran.\n"
+"Si us plau, llegiu la documentació rellevant a la depuració per entendre "
+"millor aquest flux de treball."
 
 #: editor/editor_node.cpp
 msgid "There is no defined scene to run."
@@ -2543,9 +2544,8 @@ msgid "Go to previously opened scene."
 msgstr "Vés a l'escena oberta anteriorment."
 
 #: editor/editor_node.cpp
-#, fuzzy
 msgid "Copy Text"
-msgstr "Copia Camí"
+msgstr "Copiar text"
 
 #: editor/editor_node.cpp
 msgid "Next tab"
@@ -2928,7 +2928,6 @@ msgid ""
 msgstr ""
 
 #: editor/editor_node.cpp
-#, fuzzy
 msgid ""
 "Android build template is already installed and it won't be overwritten.\n"
 "Remove the \"build\" directory manually before attempting this operation "
@@ -2936,8 +2935,8 @@ msgid ""
 msgstr ""
 "La plantilla de compilació d'Android ja està instal·lada i no se "
 "sobreescriurà.\n"
-"Elimineu el directori \"Build\" manualment abans de tornar a intentar "
-"aquesta operació."
+"Elimineu el directori 'build' manualment abans de tornar a intentar aquesta "
+"operació."
 
 #: editor/editor_node.cpp
 msgid "Import Templates From ZIP File"
@@ -3082,9 +3081,8 @@ msgid "Calls"
 msgstr "Crides"
 
 #: editor/editor_properties.cpp
-#, fuzzy
 msgid "Edit Text:"
-msgstr "Editar Tema"
+msgstr "Editar Text:"
 
 #: editor/editor_properties.cpp editor/script_create_dialog.cpp
 msgid "On"
@@ -4746,9 +4744,8 @@ msgid "Idle"
 msgstr "Inactiu"
 
 #: editor/plugins/asset_library_editor_plugin.cpp
-#, fuzzy
 msgid "Install..."
-msgstr "Instal·la"
+msgstr "Instal·lar..."
 
 #: editor/plugins/asset_library_editor_plugin.cpp
 msgid "Retry"
@@ -4794,7 +4791,7 @@ msgstr "Ordena:"
 #: editor/plugins/asset_library_editor_plugin.cpp
 #, fuzzy
 msgid "Reverse sorting."
-msgstr "Sol·licitud en marxa..."
+msgstr "Ordenació inversa."
 
 #: editor/plugins/asset_library_editor_plugin.cpp
 #: editor/project_settings_editor.cpp
@@ -4876,39 +4873,32 @@ msgid "Rotation Step:"
 msgstr "Pas de la Rotació:"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Move Vertical Guide"
-msgstr "Mou la guia vertical"
+msgstr "Moure guia vertical"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Create Vertical Guide"
-msgstr "Crea una nova guia vertical"
+msgstr "Crear guia vertical"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Remove Vertical Guide"
-msgstr "Elimina la guia vertical"
+msgstr "Eliminar guia vertical"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Move Horizontal Guide"
-msgstr "Mou la guia horitzontal"
+msgstr "Moure guia horitzontal"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Create Horizontal Guide"
-msgstr "Crea una nova guia horitzontal"
+msgstr "Crear guia horitzontal"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Remove Horizontal Guide"
-msgstr "Elimina la guia horitzontal"
+msgstr "Eliminar guia horitzontal"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
-#, fuzzy
 msgid "Create Horizontal and Vertical Guides"
-msgstr "Crea una guia horitzontal i vertical noves"
+msgstr "Crea guies horitzontal i vertical"
 
 #: editor/plugins/canvas_item_editor_plugin.cpp
 msgid "Move pivot"
