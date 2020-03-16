@@ -40,6 +40,10 @@
 #include "wsl_client.h"
 #include "wsl_server.h"
 #endif
+#ifdef TOOLS_ENABLED
+#include "editor/debugger/editor_debugger_server.h"
+#include "editor_debugger_server_websocket.h"
+#endif
 
 void register_websocket_types() {
 #ifdef JAVASCRIPT_ENABLED
@@ -56,6 +60,10 @@ void register_websocket_types() {
 	ClassDB::register_custom_instance_class<WebSocketServer>();
 	ClassDB::register_custom_instance_class<WebSocketClient>();
 	ClassDB::register_custom_instance_class<WebSocketPeer>();
+
+#ifdef TOOLS_ENABLED
+	EditorDebuggerServer::register_protocol_handler("ws://", EditorDebuggerServerWebSocket::create);
+#endif
 }
 
 void unregister_websocket_types() {}
