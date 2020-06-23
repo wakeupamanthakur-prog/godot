@@ -33,27 +33,12 @@
 
 #include "core/ordered_hash_map.h"
 #include "core/set.h"
-#include "modules/regex/regex.h"
-#include "scene/resources/packed_scene.h"
 
 class POTGenerator {
 	static POTGenerator *singleton;
 	// Stores all translatable strings and the source files containing them.
 	OrderedHashMap<String, Set<String>> all_translation_strings;
 
-	// Scene Node's properties that contain translation strings.
-	Set<String> lookup_properties;
-
-	// Regex and search patterns that are used to match translation strings in scripts.
-	const String text = "((?:[^\"\\\\]|\\\\[\\s\\S])*(?:\"[\\s\\\\]*\\+[\\s\\\\]*\"(?:[^\"\\\\]|\\\\[\\s\\S])*)*)";
-	RegEx regex;
-	Vector<String> patterns;
-	Vector<String> file_dialog_patterns;
-
-	Vector<String> _parse_scene(const Ref<SceneState> &p_state);
-	Vector<String> _parse_script(const String &p_source_code);
-	void _parse_file_dialog(const String &p_source_code, Vector<String> *r_output);
-	void _get_captured_strings(const Array &p_results, Vector<String> *r_output);
 	void _write_to_pot(const String &p_file);
 
 public:
