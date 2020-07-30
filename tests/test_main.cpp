@@ -50,7 +50,7 @@
 
 #include "modules/modules_tests.gen.h"
 
-#include "thirdparty/doctest/doctest.h"
+#include "tests/test_macros.h"
 
 int test_main(int argc, char *argv[]) {
 	// Doctest runner.
