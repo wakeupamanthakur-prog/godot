@@ -4,58 +4,67 @@
 # This file is distributed under the same license as the Godot source code.
 #
 # José Paulo <jose.paulo1919@gmail.com>, 2020.
+# Necco <necco@outlook.com>, 2020.
+# Marcelo Silveira Hayden <mshayden.1998@gmail.com>, 2020.
+# Felipe Jesus Macedo <fmacedo746@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
+"PO-Revision-Date: 2020-07-03 02:06+0000\n"
+"Last-Translator: Felipe Jesus Macedo <fmacedo746@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"godot-engine/godot-class-reference/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: doc/tools/makerst.py
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: doc/tools/makerst.py
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutoriais"
 
 #: doc/tools/makerst.py
 msgid "Properties"
-msgstr ""
+msgstr "Propriedades"
 
 #: doc/tools/makerst.py
 msgid "Methods"
-msgstr ""
+msgstr "Métodos"
 
 #: doc/tools/makerst.py
 msgid "Theme Properties"
-msgstr ""
+msgstr "Propriedades do Tema"
 
 #: doc/tools/makerst.py
 msgid "Signals"
-msgstr ""
+msgstr "Sinais"
 
 #: doc/tools/makerst.py
 msgid "Enumerations"
-msgstr ""
+msgstr "Enumerações"
 
 #: doc/tools/makerst.py
 msgid "Constants"
-msgstr ""
+msgstr "Constantes"
 
 #: doc/tools/makerst.py
 msgid "Property Descriptions"
-msgstr ""
+msgstr "Descrições da Propriedade"
 
 #: doc/tools/makerst.py
 msgid "Method Descriptions"
-msgstr ""
+msgstr "Descrições do Método"
 
 #: modules/gdscript/doc_classes/@GDScript.xml:4
 msgid "Built-in GDScript functions."
-msgstr ""
+msgstr "Funções GDScript embutidas."
 
 #: modules/gdscript/doc_classes/@GDScript.xml:7
 msgid ""
@@ -63,6 +72,9 @@ msgid ""
 "utilities. Everything else is provided by objects. (Keywords: builtin, built "
 "in, global functions.)"
 msgstr ""
+"Lista das funções essenciais embutidas em GDScript. Funções matemáticas e "
+"outras utilidades. Todo o resto é fornecido por objetos. (Palavras-chave: "
+"embutido, funções globais.)"
 
 #: modules/gdscript/doc_classes/@GDScript.xml:24
 msgid ""
@@ -77,6 +89,15 @@ msgid ""
 "red = Color8(255, 0, 0)\n"
 "[/codeblock]"
 msgstr ""
+"Retorna uma cor construída de inteiros para os canais vermelho, verde, azul "
+"e alfa. Cada canal deve ter 8 bits de informação indo de 0 a 255.\n"
+"[code]r8[/code] canal vermelho\n"
+"[code]g8[/code] canal verde\n"
+"[code]b8[/code] canal azul\n"
+"[code]a8[/code] canal alfa\n"
+"[codeblock]\n"
+"red = Color8(255, 0, 0)\n"
+"[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml:42
 msgid ""
@@ -87,6 +108,13 @@ msgid ""
 "[/codeblock]\n"
 "Supported color names are the same as the constants defined in [Color]."
 msgstr ""
+"Retorna uma cor de acordo com o [code]nome[/code] padronizado, com "
+"[code]alfa[/code] indo de 0 a 1.\n"
+"[codeblock]\n"
+"vermelho = ColorN(\"red\", 1)\n"
+"[/codeblock]\n"
+"Os nomes de cor suportados são os mesmos que as constantes definidas em "
+"[Color]."
 
 #: modules/gdscript/doc_classes/@GDScript.xml:55
 msgid ""
@@ -97,6 +125,12 @@ msgid ""
 "a = abs(-1)\n"
 "[/codeblock]"
 msgstr ""
+"Retorna o valor absoluto do parâmetro [code]s[/code] (i.e. valor sem sinal, "
+"funciona para inteiros e floats).\n"
+"[codeblock]\n"
+"# a is 1\n"
+"a = abs(-1)\n"
+"[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml:68
 msgid ""
@@ -107,6 +141,12 @@ msgid ""
 "c = acos(0.866025)\n"
 "[/codeblock]"
 msgstr ""
+"Retorna o arco cosseno de [code]s[/code] em radianos. Utilize-a para obter o "
+"ângulo do cosseno de [code]s[/code].\n"
+"[codeblock]\n"
+"# c é 0.523599 ou 30 graus, se convertido com rad2deg(s)\n"
+"c = acos(0.866025)\n"
+"[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml:81
 msgid ""
@@ -117,6 +157,12 @@ msgid ""
 "s = asin(0.5)\n"
 "[/codeblock]"
 msgstr ""
+"Retorna o arc seno de [code]s[/code] em radianos. Use para calcular o ângulo "
+"do seno de [code]s[/code].\n"
+"[codeblock]\n"
+"# s é 0.523599 ou 30 graus, se convertido com rad2deg(s)\n"
+"s = asin(0.5)\n"
+"[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml:96
 msgid ""
@@ -57109,6 +57155,8 @@ msgid ""
 "Returns falloff based on the dot product of surface normal and view "
 "direction of camera (pass associated inputs to it)."
 msgstr ""
+"Retorna decaimento com base no produto escalar da normal da superfície com a "
+"direção de visão da câmera (passe as entradas associadas a ele)."
 
 #: doc/classes/VisualShaderNodeGlobalExpression.xml:4
 msgid ""
@@ -57858,7 +57906,7 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:26
 msgid "Returns the opposite value of the parameter."
-msgstr ""
+msgstr "Retorna o valor oposto do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:29
 msgid "Returns [code]1/vector[/code]."
@@ -57866,96 +57914,96 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:32
 msgid "Converts RGB vector to HSV equivalent."
-msgstr ""
+msgstr "Converter vetor RGB para um HSV equivalente."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:35
 msgid "Converts HSV vector to RGB equivalent."
-msgstr ""
+msgstr "Converter vetor HSV para um RGB equivalente."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:38
 msgid "Returns the absolute value of the parameter."
-msgstr ""
+msgstr "Retorna o valor absoluto do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:41
 msgid "Returns the arc-cosine of the parameter."
-msgstr ""
+msgstr "Retorna o arco-cosseno do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:44
 msgid "Returns the inverse hyperbolic cosine of the parameter."
-msgstr ""
+msgstr "Retorna o cosseno hiperbólico inverso do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:47
 msgid "Returns the arc-sine of the parameter."
-msgstr ""
+msgstr "Retorna o arco-seno do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:50
 msgid "Returns the inverse hyperbolic sine of the parameter."
-msgstr ""
+msgstr "Retorna o seno hiperbólico inverso do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:53
 msgid "Returns the arc-tangent of the parameter."
-msgstr ""
+msgstr "Retorna o arco-tangente do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:56
 msgid "Returns the inverse hyperbolic tangent of the parameter."
-msgstr ""
+msgstr "Retorna a tangente hiperbólica inversa do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:59
 msgid ""
 "Finds the nearest integer that is greater than or equal to the parameter."
-msgstr ""
+msgstr "Encontra o inteiro mais próximo que é maior ou igual ao parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:62
 msgid "Returns the cosine of the parameter."
-msgstr ""
+msgstr "Retorna o cosseno do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:65
 msgid "Returns the hyperbolic cosine of the parameter."
-msgstr ""
+msgstr "Retorna o cosseno hiperbólico do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:68
 msgid "Converts a quantity in radians to degrees."
-msgstr ""
+msgstr "Converte um valor em radianos para graus."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:71
 msgid "Base-e Exponential."
-msgstr ""
+msgstr "Exponencial de base e."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:74
 msgid "Base-2 Exponential."
-msgstr ""
+msgstr "Exponencial de base 2."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:77
 msgid "Finds the nearest integer less than or equal to the parameter."
-msgstr ""
+msgstr "Encontra o inteiro mais próximo que é menor ou igual ao parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:80
 msgid "Computes the fractional part of the argument."
-msgstr ""
+msgstr "Calcula a parte fracional do argumento."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:83
 msgid "Returns the inverse of the square root of the parameter."
-msgstr ""
+msgstr "Retorna o inverso da raiz quadrada do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:86
 msgid "Natural logarithm."
-msgstr ""
+msgstr "Logaritmo natural."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:89
 msgid "Base-2 logarithm."
-msgstr ""
+msgstr "Logaritmo de base 2."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:92
 msgid "Converts a quantity in degrees to radians."
-msgstr ""
+msgstr "Converte uma quantidade em graus para radianos."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:95
 msgid "Finds the nearest integer to the parameter."
-msgstr ""
+msgstr "Encontra o inteiro mais próximo do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:98
 msgid "Finds the nearest even integer to the parameter."
-msgstr ""
+msgstr "Encontra o número inteiro par mais próximo do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:101
 msgid ""
@@ -57966,23 +58014,23 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:104
 msgid "Returns the sine of the parameter."
-msgstr ""
+msgstr "Retorna o seno do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:107
 msgid "Returns the hyperbolic sine of the parameter."
-msgstr ""
+msgstr "Retorna o seno hiperbólico do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:110
 msgid "Returns the square root of the parameter."
-msgstr ""
+msgstr "Retorna a raiz quadrada do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:113
 msgid "Returns the tangent of the parameter."
-msgstr ""
+msgstr "Retorna a tangente do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:116
 msgid "Returns the hyperbolic tangent of the parameter."
-msgstr ""
+msgstr "Retorna a tangente hiperbólica do parâmetro."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml:119
 msgid ""
@@ -58041,11 +58089,11 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeVectorOp.xml:29
 msgid "Divides vector by vector."
-msgstr ""
+msgstr "Divide vetor por vetor."
 
 #: doc/classes/VisualShaderNodeVectorOp.xml:32
 msgid "Returns the remainder of the two vectors."
-msgstr ""
+msgstr "Retorna o resto dos dois vetores."
 
 #: doc/classes/VisualShaderNodeVectorOp.xml:35
 msgid ""
@@ -58063,11 +58111,11 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeVectorOp.xml:44
 msgid "Calculates the cross product of two vectors."
-msgstr ""
+msgstr "Calcula o produto vetorial de dois vetores."
 
 #: doc/classes/VisualShaderNodeVectorOp.xml:47
 msgid "Returns the arc-tangent of the parameters."
-msgstr ""
+msgstr "Retorna o arco-tangente dos parâmetros."
 
 #: doc/classes/VisualShaderNodeVectorOp.xml:50
 msgid ""
