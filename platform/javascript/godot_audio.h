@@ -42,9 +42,8 @@ extern int godot_audio_is_available();
 extern int godot_audio_init(int p_mix_rate, int p_latency);
 extern int godot_audio_create_processor(int p_buffer_length, int p_channel_count);
 
-extern void godot_audio_start(float *r_buffer_ptr);
+extern void godot_audio_start(float *r_buffer_ptr, void (*p_start)(), void (*p_end)(), void (*p_input)(float p_sample));
 extern void godot_audio_resume();
-extern void godot_audio_finish_async();
 
 extern float godot_audio_get_latency();
 
