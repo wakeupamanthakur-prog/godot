@@ -32,11 +32,12 @@
 #define TEST_FILE_ACCESS_H
 
 #include "core/os/file_access.h"
+#include "test_utils.h"
 
 namespace TestFileAccess {
 
 TEST_CASE("[FileAccess] CSV read") {
-	FileAccess *f = FileAccess::open("tests/data/translations.csv", FileAccess::READ);
+	FileAccess *f = FileAccess::open(TestUtils::get_data_path("translations.csv"), FileAccess::READ);
 
 	Vector<String> header = f->get_csv_line(); // Default delimiter: ","
 	REQUIRE(header.size() == 3);
