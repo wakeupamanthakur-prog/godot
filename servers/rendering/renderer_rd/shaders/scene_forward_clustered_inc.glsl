@@ -13,6 +13,7 @@
 #endif
 
 #include "cluster_data_inc.glsl"
+#include "decal_data_inc.glsl"
 
 #if !defined(MODE_RENDER_DEPTH) || defined(MODE_RENDER_MATERIAL) || defined(MODE_RENDER_SDF) || defined(MODE_RENDER_NORMAL_ROUGHNESS) || defined(MODE_RENDER_GIPROBE) || defined(TANGENT_USED) || defined(NORMAL_MAP_USED)
 #ifndef NORMAL_USED
@@ -28,7 +29,11 @@ layout(push_constant, binding = 0, std430) uniform DrawCall {
 }
 draw_call;
 
-/* Set 0 Scene data that never changes, ever */
+#define SDFGI_MAX_CASCADES 8
+
+/* Set 0: Base Pass (never changes) */
+
+#include "light_data_inc.glsl"
 
 #define SAMPLER_NEAREST_CLAMP 0
 #define SAMPLER_LINEAR_CLAMP 1
@@ -42,10 +47,6 @@ draw_call;
 #define SAMPLER_LINEAR_WITH_MIPMAPS_REPEAT 9
 #define SAMPLER_NEAREST_WITH_MIPMAPS_ANISOTROPIC_REPEAT 10
 #define SAMPLER_LINEAR_WITH_MIPMAPS_ANISOTROPIC_REPEAT 11
-
-#define SDFGI_MAX_CASCADES 8
-
-/* Set 1: Base Pass (never changes) */
 
 layout(set = 0, binding = 1) uniform sampler material_samplers[12];
 
@@ -156,7 +157,7 @@ layout(set = 0, binding = 13, std140) uniform SDFGI {
 }
 sdfgi;
 
-/* Set 2: Render Pass (changes per render pass) */
+/* Set 1: Render Pass (changes per render pass) */
 
 layout(set = 1, binding = 0, std140) uniform SceneData {
 	mat4 projection_matrix;
@@ -240,7 +241,6 @@ layout(set = 1, binding = 0, std140) uniform SceneData {
 
 	bool pancake_shadows;
 }
-
 scene_data;
 
 struct InstanceData {
