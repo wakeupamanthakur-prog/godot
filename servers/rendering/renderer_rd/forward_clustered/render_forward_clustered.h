@@ -118,8 +118,6 @@ class RenderForwardClustered : public RendererSceneRenderRD {
 	uint64_t lightmap_texture_array_version = 0xFFFFFFFF;
 
 	virtual void _base_uniforms_changed();
-	void _render_buffers_clear_uniform_set(RenderBufferDataForwardClustered *rb);
-	virtual void _render_buffers_uniform_set_changed(RID p_render_buffers);
 	virtual RID _render_buffers_get_normal_texture(RID p_render_buffers);
 
 	void _update_render_base_uniform_set();
@@ -202,6 +200,7 @@ class RenderForwardClustered : public RendererSceneRenderRD {
 	};
 
 	struct SceneState {
+		// This struct is loaded into Set 1 - Binding 0, populated at start of rendering a frame, must match with shader code
 		struct UBO {
 			float projection_matrix[16];
 			float inv_projection_matrix[16];
