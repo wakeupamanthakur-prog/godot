@@ -35,6 +35,7 @@
 #include "core/io/resource_loader.h"
 #include "core/io/resource_saver.h"
 #include "scene/resources/texture.h"
+#include "shader_include.h"
 
 class Shader : public Resource {
 	GDCLASS(Shader, Resource);
@@ -53,6 +54,7 @@ public:
 private:
 	RID shader;
 	Mode mode = MODE_SPATIAL;
+	HashSet<Ref<ShaderInclude>> include_dependencies;
 
 	// hack the name of performance
 	// shaders keep a list of ShaderMaterial -> RenderingServer name translations, to make
@@ -61,6 +63,7 @@ private:
 	mutable HashMap<StringName, StringName> params_cache; //map a shader param to a material param..
 	HashMap<StringName, HashMap<int, Ref<Texture2D>>> default_textures;
 
+	void _dependency_changed();
 	virtual void _update_shader() const; //used for visual shader
 protected:
 	static void _bind_methods();
