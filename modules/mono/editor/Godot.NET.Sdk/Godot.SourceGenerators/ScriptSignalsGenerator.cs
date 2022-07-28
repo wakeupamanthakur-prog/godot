@@ -232,6 +232,24 @@ namespace Godot.SourceGenerators
                     .Append("}\n");
             }
 
+            // Generate RaiseGodotClassSignalCallbacks
+
+            if (godotSignalDelegates.Count > 0)
+            {
+                source.Append(
+                    "    protected override void RaiseGodotClassSignalCallbacks(in godot_string_name signal, ");
+                source.Append("NativeVariantPtrArgs args, int argCount)\n    {\n");
+
+                foreach (var signal in godotSignalDelegates)
+                {
+                    GenerateSignalEventInvoker(signal, source);
+                }
+
+                source.Append("        base.RaiseGodotClassSignalCallbacks(signal, args, argCount);\n");
+
+                source.Append("    }\n");
+            }
+
             source.Append("}\n"); // partial class
 
             if (isInnerClass)
@@ -355,6 +373,39 @@ namespace Godot.SourceGenerators
 
             return new PropertyInfo(memberVariantType, name,
                 PropertyHint.None, string.Empty, propUsage, exported: false);
+        }
+
+        private static void GenerateSignalEventInvoker(
+            GodotSignalDelegateData signal,
+            StringBuilder source
+        )
+        {
+            string signalName = signal.Name;
+            var invokeMethodData = signal.InvokeMethodData;
+
+            source.Append("        if (signal == GodotInternal.SignalName_");
+            source.Append(signalName);
+            source.Append(" && argCount == ");
+            source.Append(invokeMethodData.ParamTypes.Length);
+            source.Append(") {\n");
+            source.Append("            backing_");
+            source.Append(signalName);
+            source.Append("?.Invoke(");
+
+            for (int i = 0; i < invokeMethodData.ParamTypes.Length; i++)
+            {
+                if (i != 0)
+                    source.Append(", ");
+
+                source.AppendVariantToManagedExpr(string.Concat("args[", i.ToString(), "]"),
+                    invokeMethodData.ParamTypeSymbols[i], invokeMethodData.ParamTypes[i]);
+            }
+
+            source.Append(");\n");
+
+            source.Append("            return;\n");
+
+            source.Append("        }\n");
         }
     }
 }
