@@ -38,8 +38,9 @@ class OpenXRAndroidExtension : public OpenXRExtensionWrapper {
 public:
 	static OpenXRAndroidExtension *get_singleton();
 
-	OpenXRAndroidExtension(OpenXRAPI *p_openxr_api);
+	OpenXRAndroidExtension();
 
+	virtual HashMap<String, bool *> get_requested_extensions() override;
 	virtual void on_before_instance_created() override;
 	virtual void *set_instance_create_info_and_get_next_pointer(void *p_next_pointer) override;
 
