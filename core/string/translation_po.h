@@ -32,8 +32,9 @@
 
 //#define DEBUG_TRANSLATION_PO
 
-#include "core/math/expression.h"
 #include "core/string/translation.h"
+
+class PluralRules;
 
 class TranslationPO : public Translation {
 	GDCLASS(TranslationPO, Translation);
@@ -45,33 +46,7 @@ class TranslationPO : public Translation {
 	// Strings without context have "" as first key.
 	HashMap<StringName, HashMap<StringName, Vector<StringName>>> translation_map;
 
-	int plural_forms = 0; // 0 means no "Plural-Forms" is given in the PO header file. The min for all languages is 1.
-	String plural_rule;
-
-	// Cache temporary variables related to _get_plural_index() to make it faster
-	class EQNode : public RefCounted {
-		GDSOFTCLASS(EQNode, RefCounted);
-
-	public:
-		String regex;
-		Ref<EQNode> left;
-		Ref<EQNode> right;
-	};
-	Ref<EQNode> equi_tests;
-
-	int _find_unquoted(const String &p_src, char32_t p_chr) const;
-	int _eq_test(const Ref<EQNode> &p_node, const Variant &p_result) const;
-
-	Vector<String> input_name;
-	mutable Ref<Expression> expr;
-	mutable Array input_val;
-	mutable StringName last_plural_key;
-	mutable StringName last_plural_context;
-	mutable int last_plural_n = -1; // Set it to an impossible value at the beginning.
-	mutable int last_plural_mapped_index = 0;
-
-	void _cache_plural_tests(const String &p_plural_rule, Ref<EQNode> &p_node);
-	int _get_plural_index(int p_n) const;
+	PluralRules *plural_rules = nullptr;
 
 	Vector<String> _get_message_list() const override;
 	Dictionary _get_messages() const override;
@@ -98,5 +73,5 @@ public:
 	void print_translation_map();
 #endif
 
-	TranslationPO() {}
+	~TranslationPO();
 };
