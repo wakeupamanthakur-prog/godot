@@ -83,4 +83,13 @@ public class GodotApp extends GodotActivity {
 		super.onGodotMainLoopStarted();
 		runOnUiThread(updateWindowAppearance);
 	}
+
+	@Override
+	public void onGodotForceQuit(Godot instance) {
+		if (!BuildConfig.FLAVOR.equals("instrumented")) {
+			// For instrumented builds, we disable force-quitting to allow the instrumented tests to complete
+			// successfully, otherwise they fail when the process crashes.
+			super.onGodotForceQuit(instance);
+		}
+	}
 }
